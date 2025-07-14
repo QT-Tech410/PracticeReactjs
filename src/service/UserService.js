@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from "./customize-axios";
 
 const fetchAllUsers = () => {
-  return axios.get("https://jsonplaceholder.typicode.com/users");
+  return axios.get("/users");
 };
 
 export { fetchAllUsers };
